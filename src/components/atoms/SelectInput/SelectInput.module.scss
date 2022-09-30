@@ -1,0 +1,22 @@
+.select {
+    width: 262px;
+    height: 40px;
+    /* UI Properties */
+    background-color: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    opacity: 1;
+    &:focus {
+        outline: none;
+    }
+    font-size: 16px;
+    color: #423B3B;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-left: 16px;
+    background-image: url('/icons/arrow-down-icon.svg');
+      background-repeat: no-repeat, repeat;
+      background-position: right .7em top 50%, 0 0;
+      background-size: .65em auto, 100%;
+}
