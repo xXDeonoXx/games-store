@@ -38,11 +38,12 @@ const Home: NextPage<HomePageProps> = ({ products }) => {
 
 export default Home;
 
-export async function getServerSideProps(context: any) {
+export async function getStaticProps(context: any) {
   const products = getProducts();
   return {
     props: {
       products,
     },
+    revalidate: 1,
   };
 }
