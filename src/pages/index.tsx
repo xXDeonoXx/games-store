@@ -1,9 +1,11 @@
 import type { NextPage } from 'next';
+import { useContext } from 'react';
 import SelectInput from '../components/atoms/SelectInput';
 // import SelectInput from '../components/atoms/SelectInput';
 import Layout from '../components/Layout';
 import CartView from '../components/organisms/CartView';
 import ProductCard from '../components/organisms/ProductCard';
+import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import { getProducts } from '../services/api';
 import styles from '../styles/pages/Home.module.scss';
 
@@ -11,7 +13,8 @@ interface HomePageProps {
   products: [];
 }
 
-const Home: NextPage<HomePageProps> = ({ products }) => {
+const Home: NextPage<HomePageProps> = ({ products: productsToRender }) => {
+  const { products } = useContext(ShoppingCartContext);
   return (
     <Layout>
       <div className={styles.container}>
@@ -24,7 +27,7 @@ const Home: NextPage<HomePageProps> = ({ products }) => {
               </div>
             </div>
             <div className={styles.productList}>
-              {products.map((product, index) => {
+              {productsToRender.map((product, index) => {
                 return <ProductCard key={product.id} product={product} />;
               })}
             </div>

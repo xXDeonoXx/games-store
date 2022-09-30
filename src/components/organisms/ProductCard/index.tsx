@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { ShoppingCartContext } from '../../../context/ShoppingCartContext';
 import { Product } from '../../../domains/product';
 import ProductImage from '../../atoms/ProductImage';
 import styles from './ProductCard.module.scss';
@@ -10,6 +11,8 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [hovered, setHovered] = useState(false);
+  const { addProduct } = useContext(ShoppingCartContext);
+
   return (
     <div
       className={styles.container}
@@ -29,7 +32,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </Link>
       <div className={styles.productInfoWrapper}>
         {hovered ? (
-          <span className={styles.addToCart}>adicionar ao carrinho</span>
+          <span
+            onClick={() => {
+              addProduct(product);
+            }}
+            className={styles.addToCart}
+          >
+            adicionar ao carrinho
+          </span>
         ) : (
           <>
             <span className={styles.productTitle}>{product.name}</span>
