@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <div className={styles.container}>
       <div className={styles.imageWrapper}>
         <div>
-          <ProductImage />
+          <ProductImage image={product.image} />
         </div>
       </div>
       <div className={styles.productInfoWrapper}>
