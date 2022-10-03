@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  color: #7f7575;
+}
+
+.price {
+  color: #423b3b;
+  font-weight: bold;
+}
+
+.bigPrice {
+  @extend .price;
+  font-size: 20px;
+}
