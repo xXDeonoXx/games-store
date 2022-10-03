@@ -23,7 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         setHovered(false);
       }}
     >
-      <Link href={'#'}>
+      <Link href={`/product/${product.id}`}>
         <div className={styles.imageWrapper}>
           <div>
             <ProductImage image={product.image} />
