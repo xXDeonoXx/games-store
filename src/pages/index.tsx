@@ -56,6 +56,7 @@ export async function getStaticProps(context: any) {
     props: {
       products,
     },
-    revalidate: 1,
+    // Revalidate and regenerate this static page after 30 minutes
+    revalidate: 1800,
   };
 }
