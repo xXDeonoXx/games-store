@@ -1,16 +1,17 @@
-import React from 'react';
-import CartIcon from '../../atoms/CartIcon';
+import React, { useContext } from 'react';
+import { ShoppingCartContext } from '../../../context/ShoppingCartContext';
+import CartHeader from '../../molecules/CartHeader';
+import { CartInfo } from '../../molecules/CartInfo';
+import CartPricing from '../../molecules/CartPricing';
 import styles from './CartView.module.scss';
 
 const CartView = () => {
   return (
     <div className={styles.container}>
-      <h2>Carrinho</h2>
-      <div className={styles.contentWrapper}>
-        <CartIcon />
-        <p className={styles.emptyMessage}>
-          Até o momento, o seu carrinho está vazio
-        </p>
+      <CartHeader />
+      <div className={styles.body}>
+        <CartInfo />
+        <CartPricing />
       </div>
     </div>
   );
