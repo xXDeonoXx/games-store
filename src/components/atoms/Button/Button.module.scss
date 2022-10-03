@@ -7,6 +7,7 @@
 .wrapper {
   width: 100%;
   background-color: $primary;
+  border: 1px solid $primary;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -15,5 +16,14 @@
     color: white;
     font-weight: bold;
     font-size: 14px;
+    text-align: center;
+  }
+}
+
+.outline {
+  @extend .wrapper;
+  background-color: transparent;
+  span {
+    color: $primary;
   }
 }
