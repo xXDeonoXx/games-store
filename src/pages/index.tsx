@@ -6,15 +6,15 @@ import Layout from '../components/Layout';
 import CartView from '../components/organisms/CartView';
 import ProductCard from '../components/organisms/ProductCard';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
+import { Product } from '../domains/product';
 import { getProducts } from '../services/api';
 import styles from '../styles/pages/Home.module.scss';
 
 interface HomePageProps {
-  products: [];
+  products: Product[];
 }
 
-const Home: NextPage<HomePageProps> = ({ products: productsToRender }) => {
-  const { products } = useContext(ShoppingCartContext);
+const Home: NextPage<HomePageProps> = ({ products }) => {
   return (
     <Layout>
       <div className={styles.container}>
@@ -27,8 +27,13 @@ const Home: NextPage<HomePageProps> = ({ products: productsToRender }) => {
               </div>
             </div>
             <div className={styles.productList}>
-              {productsToRender.map((product, index) => {
-                return <ProductCard key={product.id} product={product} />;
+              {products.map((product) => {
+                return (
+                  <ProductCard
+                    key={product.id + Math.random()}
+                    product={product}
+                  />
+                );
               })}
             </div>
           </div>
