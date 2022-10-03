@@ -4,62 +4,71 @@
     "name": "Super Mario Odyssey",
     "price": 197.88,
     "score": 100,
-    "image": "super-mario-odyssey.png"
+    "image": "super-mario-odyssey.png",
+    "description": "Desta vez, Mario está acompanhado de um chapéu mágico extremamente versátil, que é capaz de atacar inimigos, assumir o controle de grandes criaturas e até mesmo ser utilizado como plataforma."
   },
   {
     "id": 201,
     "name": "Call Of Duty Infinite Warfare",
     "price": 49.99,
     "score": 80,
-    "image": "call-of-duty-infinite-warfare.png"
+    "image": "call-of-duty-infinite-warfare.png",
+    "description": "Infinite Warfare possui três modos de jogo únicos: a campanha é um retorno às duras raízes militares da franquia, sem deixar de olhar para frente. O multijogador traz o futuro da guerra, com várias inovações na jogabilidade. E o modo cooperativo Zumbis leva os jogadores em uma louca viagem em uma nova história com recursos e mecânicas de jogabilidade únicas."
   },
   {
     "id": 102,
     "name": "The Witcher III Wild Hunt",
     "price": 119.5,
     "score": 250,
-    "image": "the-witcher-iii-wild-hunt.png"
+    "image": "the-witcher-iii-wild-hunt.png",
+    "description": "Você é Geralt, da cidade de Rivia. Toda a cercania das cidades e povoados dos Northern Kingdoms está sendo devastada pela força sobrenatural de um exército invasor, conhecido apenas como Wild Hunt, cujo despertar é marcado por uma trilha sangrenta de pura destruição."
   },
   {
     "id": 99,
     "name": "Call Of Duty WWII",
     "price": 249.99,
     "score": 205,
-    "image": "call-of-duty-wwii.png"
+    "image": "call-of-duty-wwii.png",
+    "description": "Call of Duty® retorna às suas raízes com Call of Duty®: WWII, uma experiência espetacular que redefine a 2ª GM para uma nova geração de jogos. Jogue o clássico combate de Call of Duty®, com a camaradagem e a natureza implacável da guerra contra uma potência global que transforma o mundo em uma tirania."
   },
   {
     "id": 12,
     "name": "Mortal Kombat XL",
     "price": 69.99,
     "score": 150,
-    "image": "mortal-kombat-xl.png"
+    "image": "mortal-kombat-xl.png",
+    "description": "Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta."
   },
   {
     "id": 74,
     "name": "Shards of Darkness",
     "price": 71.94,
     "score": 400,
-    "image": "shards-of-darkness.png"
+    "image": "shards-of-darkness.png",
+    "description": "Explore and master huge open environments, sneak past or assassinate new enemies and bosses, and experiment with the new array of lethal abilities and weapons in our goblin assassin's arsenal."
   },
   {
     "id": 31,
     "name": "Terra Média: Sombras de Mordor",
     "price": 79.99,
     "score": 50,
-    "image": "terra-media-sombras-de-mordor.png"
+    "image": "terra-media-sombras-de-mordor.png",
+    "description": "Terra-Média: Sombras de Mordor é um videogame de RPG desenvolvido pela Monolith Productions e publicado pela Warner Bros. Games, que se passa no mundo Legendarium de J.R.R. Tolkien. O jogo está previsto para ser lançado no dia 30 de setembro de 2014 para PlayStation 3, PlayStation 4, Xbox 360 e Xbox One, e 2 de outubro de 2014 para Windows."
   },
   {
     "id": 420,
     "name": "FIFA 18",
     "price": 195.39,
     "score": 325,
-    "image": "fifa-18.png"
+    "image": "fifa-18.png",
+    "description": "Com a tecnologia Frostbite™ e a Tecnologia de Movimentação Real de Jogadores, o EA SPORTS™ FIFA 18 redefine os limites entre o mundo real e o virtual, dando vida aos atletas, times e ambientes que garantem a emoção do maior esporte do mundo."
   },
   {
     "id": 501,
     "name": "Horizon Zero Dawn",
     "price": 115.8,
     "score": 290,
-    "image": "horizon-zero-dawn.png"
+    "image": "horizon-zero-dawn.png",
+    "description": "Assuma o papel da habilidosa caçadora Aloy ao explorar um mundo exuberante habitado por criaturas misteriosas em um novo e emocionante jogo de ação/RPG em mundo aberto exclusivo para o sistema PlayStation®4."
   }
 ]
