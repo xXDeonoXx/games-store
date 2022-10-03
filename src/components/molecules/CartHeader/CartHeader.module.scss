@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  p {
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.quantity {
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 6px;
+}
