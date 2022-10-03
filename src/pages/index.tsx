@@ -1,8 +1,9 @@
 import type { NextPage } from 'next';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import SelectInput from '../components/atoms/SelectInput';
 // import SelectInput from '../components/atoms/SelectInput';
 import Layout from '../components/Layout';
+import ProductList from '../components/molecules/ProductList';
 import CartView from '../components/organisms/CartView';
 import ProductCard from '../components/organisms/ProductCard';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
@@ -15,6 +16,13 @@ interface HomePageProps {
 }
 
 const Home: NextPage<HomePageProps> = ({ products }) => {
+  const orderByOptions = [
+    { label: 'Mais populares', value: 'popularity' },
+    { label: 'Preço', value: 'price' },
+    { label: 'Ordem alfabética', value: 'alphabetic' },
+  ];
+  const [orderBy, setOrderBy] = useState('popularity');
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -23,19 +31,15 @@ const Home: NextPage<HomePageProps> = ({ products }) => {
             <div className={styles.header}>
               <h1 className={styles.title}>Games</h1>
               <div className={styles.filterWrapper}>
-                <SelectInput />
+                <SelectInput
+                  onChange={(e) => {
+                    setOrderBy(e.currentTarget.value);
+                  }}
+                  options={orderByOptions}
+                />
               </div>
             </div>
-            <div className={styles.productList}>
-              {products.map((product) => {
-                return (
-                  <ProductCard
-                    key={product.id + Math.random()}
-                    product={product}
-                  />
-                );
-              })}
-            </div>
+            <ProductList products={products} orderBy={orderBy} />
           </div>
           <CartView />
         </section>

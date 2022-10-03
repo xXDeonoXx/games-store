@@ -33,17 +33,5 @@
         align-items: center;
       }
     }
-
-    .productList {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 48px 32px;
-      justify-content: space-between;
-      &:after {
-        content: '';
-        width: 262px;
-      }
-    }
   }
 }

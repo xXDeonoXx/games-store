@@ -13,7 +13,7 @@ const CartPricing = () => {
     <>
       <div className={styles.container}>
         <LabelWithValue label='subtotal' price={subTotal} />
-        <LabelWithValue label='frete' price={subTotal > 200 ? 0 : frete} />
+        <LabelWithValue label='frete' price={subTotal > 250 ? 0 : frete} />
         <LabelWithValue label='total' price={subTotal + frete} bigPrice />
       </div>
       <Button

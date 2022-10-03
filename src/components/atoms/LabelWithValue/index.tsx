@@ -16,7 +16,7 @@ const LabelWithValue: React.FC<LabelWithValueProps> = ({
     <div className={styles.container}>
       <span className={styles.label}>{label}</span>
       <span className={`${bigPrice ? styles.bigPrice : styles.price}`}>
-        R$ {price}
+        R$ {price.toFixed(2)}
       </span>
     </div>
   );

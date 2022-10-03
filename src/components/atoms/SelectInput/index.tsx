@@ -1,10 +1,21 @@
 import React from 'react';
 import styles from './SelectInput.module.scss';
 
-const SelectInput: React.FC = () => {
+interface SelectInputProps {
+  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  options: { label: string; value: string }[];
+}
+
+const SelectInput: React.FC<SelectInputProps> = ({ onChange, options }) => {
   return (
-    <select className={styles.select} name='' id=''>
-      <option value=''>Mais populares</option>
+    <select onChange={onChange} className={styles.select} name='' id=''>
+      {options.map((opt) => {
+        return (
+          <option key={opt.value} value={opt.value}>
+            {opt.label}
+          </option>
+        );
+      })}
     </select>
   );
 };
